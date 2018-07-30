@@ -1,0 +1,123 @@
+.form_container{
+    
+    width:100%;
+    position: center;
+  
+    background: #F0F0F0;
+ }
+ .table_container{
+    
+    width:90%;
+    position: absolute;
+    background: white;
+    width: 90%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    font-family: lato;
+    color: #333;
+    border-radius: 10px;
+    background: #F0F0F0;
+ }
+ .table_row{
+    position: center;
+    border:1px solid rgb(233, 225, 225);
+    text-align: center;
+ }
+ 
+ form {
+    background: white;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    font-family: lato;
+    position: center;
+    color: #333;
+    border-radius: 10px;
+ }
+ 
+ .table_header {
+    text-align: center;
+    background:rgb(161, 187, 175);
+    position: center;
+    padding: 30px 20px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0;
+ }
+ td, th {
+    padding: 10px;
+}
+ 
+ form label {
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    position: relative;
+ }
+ 
+ form label span {
+    color: #FF3838;
+    font-size: 2em;
+    position: absolute;
+    left: 2.3em;
+    top: -10px;
+ }
+ form input {
+    display: block;
+    width: 50%;
+    margin-left: 20px;
+    padding: 5px 20px;
+    font-size: 1em;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+ }
+ 
+ form .help {
+    margin-left: 20px;
+    font-size: 0.8em;
+    color: #777;
+ }
+ 
+ form button {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: inherit;
+    color: white;
+    background: rgb(76, 201, 142);
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1.3em;
+    font-weight: 400;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+ }
+ form button:hover {
+    background: #ff5252;
+ }
+ button {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 12%;
+    transform: translate(18%, -15px);
+    font-family: inherit;
+    color: white;
+    background: rgb(161, 187, 175);
+    outline: none;
+    border: none;
+    padding: 14px 29px;
+    font-size: 1.3em;
+    font-weight: 400;
+    border-radius: 59px;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+ }
+ 

@@ -1,0 +1,63 @@
+
+<br/>
+
+<div class="form_container">
+   <!--  <div>
+      <table class="table_container">
+        <tr>
+            <td>FirstName</td>
+            <td>LastName</td>
+            <td>Address</td>
+            <td>Phone No</td>
+        </tr>
+        <tr>
+            
+        </tr>
+      </table>
+    </div> -->
+
+    <section class="hero is-medium is-info is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1">
+              Your Account Address <header>{{account}}</header>
+          </h1>
+          <h2 class="title">
+            You have <span class="is-medium has-underline">{{bal}}</span> Balance
+          </h2>
+          <h2 class="title">
+              <h4>Number of Peers:  {{peerCount}}</h4>
+              <h4>Network Name:  {{networkName}}</h4>
+              <h4>Account Balance:  {{bal}}</h4>
+              <h4>Number of transections:  {{tnumber}}</h4>
+            </h2>
+        </div>
+      </div>
+    </section>
+   <br>
+
+ 
+  
+
+    <div>
+        <table class="table_container">
+              <tr class="table_header">
+                <th>Block #</th>
+                <th>Tx #</th>
+                <th>Previous Hash</th>
+                <th>Hash</th>
+                <th>Timestamp</th>
+              </tr>
+              
+              <tr class="table_row" *ngFor="let block of blocks" >
+                <td>{{block.number}}</td>
+                <td>{{block.transactions.length}}</td>
+                <td>{{block.parentHash}}</td>
+                <td>{{block.hash}}</td>
+                <td>{{block.timestamp}}</td>
+              </tr>
+        </table>
+      </div>
+
+</div>
+

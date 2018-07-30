@@ -1,0 +1,2 @@
+geth --networkid 20 --port 60303 --rpc --rpcport 8545 --rpccorsdomain "http://localhost:4200" --rpcapi "db,eth,net,web3,personal,web3" --lightkdf --cache 16 --datadir "D:\Database\final_chain_database" console
+admin.addPeer("enode://5abcb9ca6fec43596589f985e113ed491bf5b7d048a4c7d10e04c42cec6926831a348d4e7c0aecf41d794bd1f49093cdd9b6ed38c6b32e0f19e8deefd0cb3f18@192.168.100.233:60303")

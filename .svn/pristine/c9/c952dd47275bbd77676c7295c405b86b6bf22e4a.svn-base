@@ -1,0 +1,67 @@
+{
+  "_from": "web3-loader",
+  "_id": "web3-loader@1.1.2",
+  "_inBundle": false,
+  "_integrity": "sha1-0P7PzmknY97qbtVvPkiZXMknGYg=",
+  "_location": "/web3-loader",
+  "_phantomChildren": {
+    "big.js": "3.2.0",
+    "emojis-list": "2.1.0",
+    "json5": "0.5.1",
+    "object-assign": "4.1.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "web3-loader",
+    "name": "web3-loader",
+    "escapedName": "web3-loader",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/web3-loader/-/web3-loader-1.1.2.tgz",
+  "_shasum": "d0fecfce692763deea6ed56f3e48995cc9271988",
+  "_spec": "web3-loader",
+  "_where": "E:\\Anguler 4\\Ang1",
+  "author": {
+    "name": "U-Zyn Chua",
+    "email": "chua@uzyn.com",
+    "url": "http://uzyn.com"
+  },
+  "bugs": {
+    "url": "https://github.com/uzyn/web3-loader/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "graphlib": "^2.1.0",
+    "loader-utils": "0.2.x"
+  },
+  "deprecated": false,
+  "description": "Ethereum web3.js module for Webpack",
+  "homepage": "https://github.com/uzyn/web3-loader#readme",
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "solc",
+    "webpack",
+    "blockchain",
+    "smart contract",
+    "web3"
+  ],
+  "license": "MIT",
+  "name": "web3-loader",
+  "peerDependencies": {
+    "web3": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzyn/web3-loader.git"
+  },
+  "version": "1.1.2"
+}

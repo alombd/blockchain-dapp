@@ -1,0 +1,49 @@
+{
+  "_from": "hammer@0.0.5",
+  "_id": "hammer@0.0.5",
+  "_inBundle": false,
+  "_integrity": "sha1-DqG/gc9+reY5qgQXJywnGCxeh2Q=",
+  "_location": "/hammer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "hammer@0.0.5",
+    "name": "hammer",
+    "escapedName": "hammer",
+    "rawSpec": "0.0.5",
+    "saveSpec": null,
+    "fetchSpec": "0.0.5"
+  },
+  "_requiredBy": [
+    "/ng4-loader-bar"
+  ],
+  "_resolved": "https://registry.npmjs.org/hammer/-/hammer-0.0.5.tgz",
+  "_shasum": "0ea1bf81cf7eade639aa0417272c27182c5e8764",
+  "_spec": "hammer@0.0.5",
+  "_where": "E:\\Anguler 4\\Ang1\\node_modules\\ng4-loader-bar",
+  "author": {
+    "name": "goddyzhao",
+    "email": "goddy128@gmail.com",
+    "url": "goddyzhao.me"
+  },
+  "bin": {
+    "hammer": "./bin/hammer"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Tool for building my personal project structure",
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "homepage": "https://bitbucket.org/goddyzhao/hammer#readme",
+  "name": "hammer",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://goddyzhao@bitbucket.org/goddyzhao/hammer.git"
+  },
+  "version": "0.0.5"
+}

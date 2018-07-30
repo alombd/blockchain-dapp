@@ -1,0 +1,72 @@
+{
+  "_from": "create-contract",
+  "_id": "create-contract@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-z2b9RrG2i6fl7HZXy1K381Oe0q4=",
+  "_location": "/create-contract",
+  "_phantomChildren": {
+    "crypto-js": "3.1.8",
+    "utf8": "2.1.2",
+    "xmlhttprequest": "1.8.0"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "create-contract",
+    "name": "create-contract",
+    "escapedName": "create-contract",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/create-contract/-/create-contract-0.1.0.tgz",
+  "_shasum": "cf66fd46b1b68ba7e5ec7657cb52b7f3539ed2ae",
+  "_spec": "create-contract",
+  "_where": "E:\\Anguler 4\\Ang1",
+  "author": {
+    "name": "Zhenchao Chen"
+  },
+  "bugs": {
+    "url": "https://github.com/zhenchaochen/create-contract/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "web3": "^0.17.0-beta"
+  },
+  "deprecated": false,
+  "description": "Easy way to create ready-to-use ethereum solidity contract",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0"
+  },
+  "homepage": "https://github.com/zhenchaochen/create-contract#readme",
+  "keywords": [
+    "file",
+    "class",
+    "new",
+    "create",
+    "ethereum",
+    "solidity",
+    "contract"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "create-contract",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhenchaochen/create-contract.git"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rm -rf lib dist node-modules",
+    "example": "https://github.com/zhenchaochen/create-contract/tree/master/example",
+    "prepublish": "npm run build",
+    "watch": "babel src --out-dir lib --watch --source-maps"
+  },
+  "version": "0.1.0"
+}

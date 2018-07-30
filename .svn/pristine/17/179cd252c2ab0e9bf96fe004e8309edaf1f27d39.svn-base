@@ -1,0 +1,14 @@
+"enode://08e542514aeeb876c478fc1ee31324c2787cebaa8c8da8c57116a50fea5e3f6674e189f0fb47acbcb923abe1a506c50882cdd54f9a0aaf4fdd383f11c699ade9@192.168.0.118:30303"
+
+geth --networkid 13 --port 60303 --rpc --lightkdf --cache 16 --datadir "D:\geth\BlockData" console
+
+geth --networkid 13 --port 30303 --rpc --rpcport 8545 --rpccorsdomain "*" --datadir "D:\geth\ChainData" --minerthreads 1 --bootnodes "enode://7d9b6de6f3ad13ca322410d822d0bc9b09bb66441e02553bfdb013037b062c08a24250226dbdc660a4a11e1def0638f61a5159fd3d63d2826eb08f8ee1bacd16@192.168.100.248:60303"
+
+
+geth — networkid 13 — port 60303 — rpc — lightkdf — cache 16 — datadir “D:\geth\ChainData” console
+
+ "enode://7d9b6de6f3ad13ca322410d822d0bc9b09bb66441e02553bfdb013037b062c08a24250226dbdc660a4a11e1def0638f61a5159fd3d63d2826eb08f8ee1bacd16@103.222.22.141:60303"
+
+
+
+geth --networkid 13 --port 60303 --datadir D:\geth\BlockData --bootnodes enode://7d9b6de6f3ad13ca322410d822d0bc9b09bb66441e02553bfdb013037b062c08a24250226dbdc660a4a11e1def0638f61a5159fd3d63d2826eb08f8ee1bacd16@103.222.22.141:60303,enode://33a49dc1768bce8a9d77b4f9ceb40211b2f1f463a0d4c919566b040dbaa1ea637bbc9100e8eceb2a766ffa8ff9b6f127ea3a7828eda0b9cf18e0c8f0ad7e0ac5@192.168.100.184:60303

@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular Bootstrap Demo</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <app-root>Loading...</app-root>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<div class="form_container">
+   <!--  <div>
+      <table class="table_container">
+        <tr>
+            <td>FirstName</td>
+            <td>LastName</td>
+            <td>Address</td>
+            <td>Phone No</td>
+        </tr>
+        <tr>
+            
+        </tr>
+      </table>
+    </div> -->
+
+    <section class="hero is-medium is-info is-bold">
+      <div class="hero-body">
+     
+        <div class="container">
+            
+            <div style=" font-size: 4.3em; " >
+                <img width="100" src="assets/index_1.png">
+              Welcome to {{networkName}} Test Network</div>
+          <div class="col-xs-6">
+              Your Account Address <header>{{account}}</header>
+              <h6>Number of Peers:  {{peerCount}}</h6>
+         </div>
+         <div class="col-xs-6">
+            You have <span class="is-medium has-underline">{{bal}}</span> Balance
+
+         
+         </div>
+         <div class="col-xs-6">
+        
+              <h6>Number of transections:  {{tnumber}}</h6>
+           </div>
+        </div>
+      </div>
+    </section>
+   <br>
+
+ 
+  
+   <button (click)="myTransections($event)" style="">Latest Transections</button>
+   <button (click)="pending($event)" ng-model="myVar" ng-init="myVar = true">Pending</button>
+    <div>
+        <table class="table_container" style="margin-left:100px;" >
+              <tr class="table_header" >
+                <th>value #</th>
+                <th>Block #</th>
+                <th>From </th>
+                <th>To</th>
+                <th>Gas used</th>
+                <th ng-if="myVar" >Mine</th>
+              </tr>
+              
+              <tr class="table_row" *ngFor="let block of trans" >
+                <td><a href="/#/transections/{{block.number}}">{{block.v}}</a></td> 
+                <td>{{block.blockNumber}}</td>
+                <td >me</td>
+                <td>{{block.to}}</td>
+                <td>{{block.gas}}</td>
+                <td ng-if="myVar" ><button (click)="mine($event)" class="mine" style=" ">mine</button></td>
+              </tr>
+        </table>
+       
+      </div>
+
+</div>
+
+</body>
+</html>

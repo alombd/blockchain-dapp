@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="form_container">
+  <form [formGroup]="formdata" (ngSubmit) = "registration(formdata.value)" >
+     <header>Registration </header>
+     <label>FirstName <span>*</span></label>
+     <input type="text" name="fname" formControlName="fname"/>
+     <label>LastName <span>*</span></label>
+     <input type="text" name="lname" formControlName="lname"/>
+     <label>Address <span></span></label>
+     <input type="text" name="address" formControlName="address"/>
+     <label>Phone No <span></span></label>
+     <input type="text" name="phoneno" formControlName="phoneno"/>
+    
+     
+     <button [disabled]="!formdata.valid" value="Submit">Submit</button>
+  </form>
+</div>
+<br/>
+
+<div id="custtable" class="table_container" style="display:none;margin:0 auto;">
+  <table class="table_container">
+     <tr>
+        <td>FirstName</td>
+        <td>LastName</td>
+        <td>Address</td>
+        <td>Phone No</td>
+     </tr>
+     <tr>
+        <td *ngFor="let data of cutomerdata">
+           <h5>{{data}}</h5>
+        </td>
+     </tr>
+  </table>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,63 @@
+{
+  "_from": "ipfs-image-web-upload",
+  "_id": "ipfs-image-web-upload@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-faYnWvSaZ7DDt2n81X/+h5JNOI4SyDh50jv0frVJyxMfWtpW0AD9y39cOh1TyIFU8ldX46N/v9kRwK7KWuQaEA==",
+  "_location": "/ipfs-image-web-upload",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ipfs-image-web-upload",
+    "name": "ipfs-image-web-upload",
+    "escapedName": "ipfs-image-web-upload",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ipfs-image-web-upload/-/ipfs-image-web-upload-1.0.5.tgz",
+  "_shasum": "0d5bdfa4234dd710fe22764b32a566a6e08c7a28",
+  "_spec": "ipfs-image-web-upload",
+  "_where": "E:\\Anguler 4\\Ang1",
+  "author": {
+    "name": "Marek Kirejczyk"
+  },
+  "bugs": {
+    "url": "https://github.com/ambrosus/ipfs-image-web-upload/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Simple uploader/downloader for images stored on ipfs. Allows to upload pictures from html <input type=\"file\" ...> and use them in <img src=\"...\"> tag\".",
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/ambrosus/ipfs-image-web-upload#readme",
+  "keywords": [
+    "ipfs",
+    "image",
+    "html",
+    "input",
+    "files",
+    "upload",
+    "download",
+    "loader",
+    "uploader",
+    "save",
+    "link"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "ipfs-image-web-upload",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambrosus/ipfs-image-web-upload.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.5"
+}

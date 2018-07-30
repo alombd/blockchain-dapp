@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular Bootstrap Demo</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <app-root>Loading...</app-root>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+    <section class="hero is-medium is-info is-bold">
+      <div class="hero-body">
+     
+        <div class="container">
+            
+            <div style=" font-size: 4.3em; " >
+              <img width="100" src="assets/index_1.png">
+              Welcome to {{networkName}} Test Network</div>
+          <div class="col-xs-6">
+            Your Account Address <header>{{account}}</header>
+              <h6>Number of Peers:  {{peerCount}}</h6>
+         </div>
+         <div class="col-xs-6">
+          You have <span class="is-medium has-underline">{{bal}}</span> Balance
+
+         
+         </div>
+         <div class="col-xs-6">
+        
+          <h6>Number of transections:  {{tnumber}}</h6>
+           </div>
+        </div>
+      </div>
+    </section>
+   <br>
+
+ 
+  
+
+
+<div class="form_container">
+  <form [formGroup]="formdata" (ngSubmit) = "registration(formdata.value)" >
+     <header>Khotain Form</header>
+     <label>Khotian Type<span>*</span></label>
+     <input type="text" name="k_type" formControlName="k_type"/>
+     <label>Khotian No<span>*</span></label>
+     <input type="text" name="k_no" formControlName="k_no"/>
+     <label>Dag No <span></span></label>
+     <input type="int" name="address" formControlName="d_no"/>
+     <label>Owner Name <span></span></label>
+     <input type="text" name="o_name" formControlName="o_name"/>
+     <label>Owner Address <span></span></label>
+     <input type="text" name="o_adrs" formControlName="o_adrs"/>
+     <label>Owner Father Name <span></span></label>
+     <input type="text" name="o_f_name" formControlName="o_f_name"/>
+     <label>Owner Phone No <span></span></label>
+     <input type="int" name="o_phn" formControlName="o_phn"/>
+     <label>Owner Dags Type <span></span></label>
+     <input type="text" name="o_dag_type" formControlName="o_dag_type"/>
+     <label>Land Amount<span></span></label>
+     <input type="int" name="o_land_amount" formControlName="o_land_amount"/>
+     <button [disabled]="!formdata.valid" value="Submit">Submit</button>
+  </form>
+</div>
+<br/>
+
+<div id="custtable" class="table_container" style="display:none;margin:0 auto;">
+  <table class="table_container">
+     <tr>
+        <td>FirstName</td>
+        <td>LastName</td>
+        <td>Address</td>
+        <td>Phone No</td>
+     </tr>
+     <tr>
+        <td *ngFor="let data of cutomerdata">
+           <h5>{{data}}</h5>
+        </td>
+     </tr>
+  </table>
+</div>
+
+</body>
+</html>

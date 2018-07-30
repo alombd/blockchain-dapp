@@ -1,0 +1,43 @@
+<app-header></app-header>
+<div class="form_container">
+  <form [formGroup]="formdata" (ngSubmit) = "registration(formdata.value)" >
+     <header>Khotain Form</header>
+     <label>Khotian Type<span>*</span></label>
+     <input type="text" name="k_type" formControlName="k_type"/>
+     <label>Khotian No<span>*</span></label>
+     <input type="text" name="k_no" formControlName="k_no"/>
+     <label>Dag No <span></span></label>
+     <input type="int" name="address" formControlName="d_no"/>
+     <label>Owner Name <span></span></label>
+     <input type="text" name="o_name" formControlName="o_name"/>
+     <label>Owner Address <span></span></label>
+     <input type="text" name="o_adrs" formControlName="o_adrs"/>
+     <label>Owner Father Name <span></span></label>
+     <input type="text" name="o_f_name" formControlName="o_f_name"/>
+     <label>Owner Phone No <span></span></label>
+     <input type="int" name="o_phn" formControlName="o_phn"/>
+     <label>Owner Dags Type <span></span></label>
+     <input type="text" name="o_dag_type" formControlName="o_dag_type"/>
+     <label>Land Amount<span></span></label>
+     <input type="int" name="o_land_amount" formControlName="o_land_amount"/>
+     <button [disabled]="!formdata.valid" value="Submit">Submit</button>
+  </form>
+</div>
+<br/>
+
+<div id="custtable" class="table_container" style="display:none;margin:0 auto;">
+  <table class="table_container">
+     <tr>
+        <td>FirstName</td>
+        <td>LastName</td>
+        <td>Address</td>
+        <td>Phone No</td>
+     </tr>
+     <tr>
+        <td *ngFor="let data of cutomerdata">
+           <h5>{{data}}</h5>
+        </td>
+     </tr>
+  </table>
+</div>
+<app-footer></app-footer>

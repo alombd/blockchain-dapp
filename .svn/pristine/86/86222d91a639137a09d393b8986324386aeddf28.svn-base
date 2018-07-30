@@ -1,0 +1,33 @@
+/*!
+ * Copyright (C) 2017 ESKMedia
+ * This project is licensed under the terms of the MIT license.
+ * https://github.com/erickknaebel/ng4-loader-bar
+ */
+
+
+/* Styling for the NG4 Loading Bar container */
+.ng4-loader-bar {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+/* Styling for the Ng4 Loading Progress Bar itself */
+.ng4-loader-bar-progress {
+    margin: 0;
+    padding: 0;
+    z-index: 99998;
+    background-color: red;
+    color: red;
+    box-shadow: 0 0 10px 0;
+    height: 2px;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
